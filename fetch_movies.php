@@ -16,7 +16,7 @@ if(!$Title){
     exit;
 }
 
-    $API_KEY = "6546b110";
+    $API_KEY = "Your_API_Key";
     $TitleEncoded = urlencode($Title);
     $searchUrl = "https://www.omdbapi.com/?apikey=$API_KEY&s=$TitleEncoded";
     $response = @file_get_contents($searchUrl);
@@ -59,5 +59,6 @@ echo json_encode($fullMovies);
 
 
   
+
 
     
